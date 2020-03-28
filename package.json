@@ -10,7 +10,7 @@
     "build": "ng build --prod",
     "e2e": "ng e2e",
     "ng": "ng",
-    "precommit": "ts-node pre-commit.js"
+    "precommit": "node pre-commit.js"
   },
   "keywords": [],
   "author": "",
@@ -57,7 +57,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "ng lint"
+      "pre-commit": "npm run precommit"
     }
   },
   "repository": {}
