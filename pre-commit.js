@@ -4,7 +4,7 @@ async function run() {
     console.log('succes data');
   } else {
     console.log('you can not commit thi changes becouse file is difference');
-    throw "Error2";
+    return 0;
   }
 }
 run();
