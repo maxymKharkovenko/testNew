@@ -12,10 +12,11 @@ const resetAndExit = message => {
       process.exit(1);
     });
 };
-const checkFile = async () => {
+const checkFile = () => {
   const d = 5;
   if (d > 7) {
     resetAndExit('Error: debugger. Exiting.');
   }
 };
 checkFile();
+
